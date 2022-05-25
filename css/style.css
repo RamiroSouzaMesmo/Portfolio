@@ -1,0 +1,183 @@
+*, *::after, *::before{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffff;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.linksMenu{
+    text-decoration: none;
+    color: #ffff;
+}
+.linksMenu:hover{
+    color: #9E1972;
+}
+
+#logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffff;
+}
+
+#header{
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    gap: .5rem; 
+}
+#menu a{
+    display:block;
+    padding: .5rem;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+.header-site{
+    background-image: url('../img/background.jpg');
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #ffff;
+    padding-top:300px;
+    padding-bottom: 300px;
+}
+.about .row{
+   padding-top:100px;
+   padding-bottom:100px;
+}
+.content-site{
+    padding-bottom: 300px;
+}
+#titles-Technologies-descrition{
+    margin-bottom: -50px;
+}
+#title-Section-technologies{
+    color: #9E1972;
+    
+}
+.titles-Ramiro{
+    color: #9E1972;
+}
+.img-site{
+    background-image: url('../img/background.jpg');
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #ffff;
+    padding-top:300px;
+    padding-bottom: 300px;
+}
+.img-site p{
+    margin-bottom: 100px;
+}
+
+.thumbnail{
+    margin-top: 100px;
+}
+
+.thumbnail:hover{
+    transform: scale(1.1);  
+    transition: all .2s linear;
+    cursor: pointer;
+
+}
+.logo{
+    font-size: 100px;
+}
+.logo:hover{
+    color:#9E1972;
+    cursor:pointer;
+}
+#contato{
+    font-size: 25px;
+}
+#thanks{
+    margin-top: 300px;
+}
+
+
+@media only screen and (max-device-width: 600px) {
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #000000;
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer{
+        border-top: 2px solid;
+        width: 20px;
+        color:#9E1972;
+    }
+    #hamburguer::after,  #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+        color: #9E1972;
+    }
+    
+    nav.active #hamburguer{
+        border-top-color: transparent; 
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    #titles-Technologies-descrition{
+        margin-bottom: 0px;
+    }
+}
