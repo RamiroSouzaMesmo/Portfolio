@@ -87,6 +87,10 @@ ul{
     padding-top:300px;
     padding-bottom: 300px;
 }
+.icones-gerais{
+    width: 10%;
+    height: 10%;
+}
 .img-site p{
     margin-bottom: 100px;
 }
@@ -100,6 +104,18 @@ ul{
     transition: all .2s linear;
     cursor: pointer;
 
+}
+.technologies-logo{
+    width: 30%;
+    height: 30%;
+}
+#py-image{
+    height: 80%;
+    width: 80%;
+}
+#htmlImage{
+    height: 80%;
+    width: 80%;
 }
 .logo{
     font-size: 100px;
@@ -179,5 +195,13 @@ ul{
     }
     #titles-Technologies-descrition{
         margin-bottom: 0px;
+    }
+    .icones-gerais{
+        width: 30%;
+        height: 30%;
+    }
+    .technologies-logo{
+        width: 30%;
+        height: 30%;
     }
 }
