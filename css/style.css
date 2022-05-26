@@ -61,14 +61,14 @@ ul{
     padding-bottom: 300px;
 }
 .about .row{
-   padding-top:100px;
+   padding-top:300px;
    padding-bottom:100px;
 }
 .content-site{
     padding-bottom: 300px;
 }
 #titles-Technologies-descrition{
-    margin-bottom: -50px;
+    margin-top: 250px;
 }
 #title-Section-technologies{
     color: #9E1972;
@@ -92,7 +92,7 @@ ul{
     height: 10%;
 }
 .img-site p{
-    margin-bottom: 100px;
+    
 }
 
 .thumbnail{
@@ -106,8 +106,8 @@ ul{
 
 }
 .technologies-logo{
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
 }
 #py-image{
     height: 80%;
@@ -124,6 +124,13 @@ ul{
     color:#9E1972;
     cursor:pointer;
 }
+#logo{
+    color: #ffff;
+}
+#logo:hover{
+    color:#9E1972;
+    cursor:pointer;
+}
 #contato{
     font-size: 25px;
 }
@@ -133,69 +140,37 @@ ul{
 #thanks{
     margin-top: 300px;
 }
+.linha{
+    margin-top: 80px;
+}
+.portfolio{
+    margin-bottom: 300px
+}
+.projetos{
+    margin-top: 180px;
+}
+.fixado{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: #9E1972;
+    width: 50px; 
+    height: 50px; 
+    -webkit-border-radius: 50px; 
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    margin: 40px;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 1;
 
-
+}
+#flecha{
+    width: 60%;
+}
 @media only screen and (max-device-width: 600px) {
-    #menu{
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background-color: #000000;
-        transition: .6s;
-        z-index: 1000;
-        height: 0px;
-        visibility: hidden;
-        overflow-y: hidden;
-    }
-    nav.active #menu{
-        height: calc(100vh - 70px);
-        visibility: visible;
-        overflow-y: auto;
-    }
-    #menu a{
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    }
-
-    #btn-mobile{
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-    #hamburguer{
-        border-top: 2px solid;
-        width: 20px;
-        color:#9E1972;
-    }
-    #hamburguer::after,  #hamburguer::before{
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-        color: #9E1972;
-    }
     
-    nav.active #hamburguer{
-        border-top-color: transparent; 
-    }
-    #nav.active #hamburguer::before{
-        transform: rotate(135deg);
-    }
-    #nav.active #hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
     #titles-Technologies-descrition{
         margin-bottom: 0px;
     }
@@ -204,10 +179,13 @@ ul{
         height: 30%;
     }
     .technologies-logo{
-        width: 30%;
-        height: 30%;
+        width: 15%;
+        height: 15%;
     }
     #icones-projetos{
         width: 15%;
+    }
+    .projetos{
+        margin-top: 100px;
     }
 }
