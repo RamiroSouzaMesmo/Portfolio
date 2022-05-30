@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="shortcut icon" href="img/icones/logo-site.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body>
         <header id = "header">
@@ -162,7 +163,7 @@
                     <div class="col-sm-6">
                         <div class= "projetos">
                             <div class="caption text-center" data-aos="slide-down" data-aos-duration="1000">
-                                <h3  class="titles-Ramiro"data-aos="slide-down" data-aos-duration="1000">Geradorador de Planilha</h3>
+                                <h3  class="titles-Ramiro"data-aos="slide-down" data-aos-duration="1000">Gerador de Planilha</h3>
                                 <img src="img/icones/planilha.png" alt="planilha" class = "icones-gerais" id = "icones-projetos">
                             </div>
                         </div>
@@ -192,11 +193,24 @@
                     <div class="row" id = "contato">
                         <div class="col-sm-6">
                             <img src="img/icones/whatsapp.png" alt="whatsapp-icon" class = "icones-contato">
-                            <p class = "lead text-center">(51) 99983-9215</p>
+                            <img src="img/icones/flecha-abrir.png" alt="icone-abrir" class = "lead text-center" id = "flecha-abrir-whatsapp" onclick="ativarMenuWhatsapp()" >
+                            <img src="img/icones/flecha-fechar.png" alt="icone-abrir" class = "lead text-center" id = "flecha-fechar-whatsapp" onclick="desativarMenuWhatsapp()">
+
+                            <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5551999839215" target="_blank">
+                                <p class = "lead text-center" id = "numeroTelefone">(51) 99983-9215</p>
+                                <p class = "lead text-center" id = "aviso-whatsapp"> Clique para falar Comigo!</p>
+                            </a>
+                        
+                            
                         </div>
                         <div class="col-sm-6">
                             <img src="img/icones/email.png" alt="email" class = "icones-contato">
-                            <p class = "lead text-center">souzasramiro@gmail.com</p>
+                            <img src="img/icones/flecha-abrir.png" alt="icone-abrir" class = "lead text-center" id = "flecha-abrir-email" onclick="ativarMenuEmail()" >
+                            <img src="img/icones/flecha-fechar.png" alt="icone-abrir" class = "lead text-center" id = "flecha-fechar-email" onclick="desativarMenuEmail()">
+                            
+                            <p class = "lead text-center" id = "email">souzasramiro@gmail.com</p>
+                            <p  class = "lead text-center" onclick="copiarTexto()" id = "copiar">Copiar</p>
+
                         </div>
                     </div>
                 </div> 
@@ -219,5 +233,6 @@
           AOS.init();
         </script>
         <script src="./scripts/script.js"></script>
+    
     </body>
 </html>

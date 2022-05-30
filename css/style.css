@@ -91,9 +91,6 @@ ul{
     width: 10%;
     height: 10%;
 }
-.img-site p{
-    
-}
 
 .thumbnail{
     margin-top: 100px;
@@ -126,6 +123,10 @@ ul{
 }
 #contato{
     font-size: 25px;
+}
+#contato a{
+    text-decoration: none;
+    color: #ffff;
 }
 .icones-contato{
     width: 5%;
@@ -161,6 +162,75 @@ ul{
 #flecha{
     width: 50%;
 }
+#aviso-whatsapp{
+    display: none;
+    transition: all .2s linear;
+    
+}
+#aviso-whatsapp:hover{
+    color:#9E1972;
+}
+#numeroTelefone{
+    display: none;
+    transition: all .2s linear;
+}
+#numeroTelefone:hover{
+    color:#9E1972;
+}
+#copiar{
+    display: none;
+    transition: all .2s linear;
+}
+#copiar:hover{
+    color:#9E1972;
+    cursor:pointer;
+    
+}
+#email{
+    display: none;
+    transition: all .2s linear;
+}
+#email:hover{
+    color: #9E1972;
+    cursor:pointer;
+}
+.flecha-abrir{
+    width: 3%;
+    padding: 0px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+#flecha-abrir-whatsapp{
+    width: 3%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#flecha-fechar-whatsapp{
+    width: 3%;
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#flecha-abrir-email{
+    width: 3%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#flecha-fechar-email{
+    width: 3%;
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
 
 @media only screen and (max-device-width: 600px) {
     #menu{
